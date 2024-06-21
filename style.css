@@ -40,8 +40,7 @@ header > ul {
     align-content: center;
     list-style: none;
     background-color: var(--rtc-primary-color) ;
-    font-size: 1.2em;  
-
+    font-size: 1.2em; 
 }
 
  main {
@@ -87,6 +86,7 @@ header > ul {
     width: 300px;
     height: 200px;
     margin-top: 20px;
+    border-radius: 8px;
     
  }
 
