@@ -46,7 +46,6 @@ header > ul {
 
  main {
     display: flex;
-
     width: 100%;
     padding: 40px;
     padding-top: 100px;
@@ -63,9 +62,10 @@ header > ul {
     border: 20px;
     border: rgb(205, 168, 122) solid 2px;
     border-radius: 16px;
+    justify-content: space-around;
  }
 
- .principal {
+ .piloto {
     width: 50%;
     height: 50%;
     display: flex;
@@ -73,21 +73,28 @@ header > ul {
     align-content: center;
     justify-content: center;
  }
+ .piloto img {
+    height: 800px;
+    object-position: center;
+ }
 
  .noticias {
-    width: 320px;
+    width: 300px;
+
  }
 
  .actualidad img {
     width: 300px;
     height: 200px;
     margin-top: 20px;
+    
  }
 
  section > div > p {
     width: 200px;
     font-style: var(--rtc-secondary-color);
  }
+
 
 footer {
     display: flex;
