@@ -5,7 +5,7 @@
     font-family: Notosans;
 }
 :root {
-    --rtc-primary-color: #7faea6;
+    --rtc-primary-color: #f2dfa1;
     --rtc-secondary-color: #000000;
     --rtc-tertiary-color: #FFFFFF;
     --rtc-background-color: #1090cb2b;
@@ -21,13 +21,16 @@
 header {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    text-align: center;
+    
 }
 
 h1 {
-    padding: 20px;
-    width: 100%;
-    
+    padding: 20px; 
+    border: red solid 5px;
+    border-radius: 16px; 
+    font-size: 3em;
 }
 
 header > ul {
@@ -37,17 +40,77 @@ header > ul {
     align-content: center;
     list-style: none;
     background-color: var(--rtc-primary-color) ;
+    font-size: 1.2em;  
+
 }
 
-header > ul > li {
-    border-color: cadetblue solid 2px;
-}
-body {
-    
-    
-}
+ main {
+    display: flex;
 
-section > img {
+    width: 100%;
+    padding: 40px;
+    padding-top: 100px;
+    background-color: antiquewhite;
+       
+ }
+
+ .actualidad {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 20px;
+    border: rgb(205, 168, 122) solid 2px;
+    border-radius: 16px;
+ }
+
+ .principal {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+ }
+
+ .noticias {
+    width: 320px;
+ }
+
+ .actualidad img {
     width: 300px;
     height: 200px;
+    margin-top: 20px;
+ }
+
+ section > div > p {
+    width: 200px;
+    font-style: var(--rtc-secondary-color);
+ }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 50px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: var(--rtc-primary-color);
+    
+}
+footer img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    gap: 10px;
+}
+footer ul {
+    display: flex;
+}
+footer ul li {
+    list-style: none; 
+    margin-top: 10px;
+    margin-right: 10px;
+    
 }
