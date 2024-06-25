@@ -6,9 +6,9 @@
 }
 :root {
     --rtc-primary-color: #f2dfa1;
-    --rtc-secondary-color: #000000;
+    --rtc-secondary-color: #ad6c2e;
     --rtc-tertiary-color: #FFFFFF;
-    --rtc-background-color: #1090cb2b;
+    --rtc-background-color: antiquewhite;
 }
 
 @font-face {
@@ -28,7 +28,7 @@ header {
 
 h1 {
     padding: 20px; 
-    border: red solid 5px;
+    border: var(--rtc-secondary-color) solid 5px;
     border-radius: 16px; 
     font-size: 3em;
 }
@@ -48,16 +48,19 @@ header > ul {
     width: 100%;
     padding: 40px;
     padding-top: 100px;
-    background-color: antiquewhite;
-       
+    background-color: var(--rtc-background-color);     
  }
 
+  main > section > h2 {
+    padding: 10px;
+  }
+
  .actualidad {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
     border: 20px;
     border: rgb(205, 168, 122) solid 2px;
     border-radius: 16px;
@@ -65,7 +68,7 @@ header > ul {
  }
 
  .piloto {
-    width: 50%;
+    width: 40%;
     height: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -73,21 +76,19 @@ header > ul {
     justify-content: center;
  }
  .piloto img {
-    height: 800px;
+    height: 700px;
     object-position: center;
  }
 
  .noticias {
-    width: 300px;
-
+    width: 320px;
  }
 
  .actualidad img {
-    width: 300px;
+    width: 320px;
     height: 200px;
     margin-top: 20px;
-    border-radius: 8px;
-    
+    border-radius: 8px;   
  }
 
  section > div > p {
@@ -102,8 +103,10 @@ footer {
     row-gap: 10px;
     padding: 50px;
     height: 200px;
+    width: 100%;
     margin-bottom: 10px;
     background-color: var(--rtc-primary-color);
+    position: absolute;
     
 }
 footer img {
