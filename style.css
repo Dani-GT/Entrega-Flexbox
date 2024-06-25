@@ -1,168 +1,162 @@
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Notosans;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Notosans;
 }
 
-    :root {
-    --rtc-primary-color: #f2dfa1;
-    --rtc-secondary-color: #ad6c2e;
-    --rtc-tertiary-color: #FFFFFF;
-    --rtc-background-color: antiquewhite;
+:root {
+  --rtc-primary-color: #f2dfa1;
+  --rtc-secondary-color: #ad6c2e;
+  --rtc-tertiary-color: #ffffff;
+  --rtc-background-color: antiquewhite;
 }
 
-    @font-face {
-    font-family: Notosans;
-    src:url(./Assets/Noto_Sans/static/NotoSans-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: Notosans;
+  src: url(./Assets/Noto_Sans/static/NotoSans-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
 }
 
-    body {
-    background-color: var(--rtc-background-color);
-    width: 100%;
+body {
+  background-color: var(--rtc-background-color);
+  background-image: url(./Assets/rocky-wall.png);
+  width: 100%;
 }
 
-    header {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;    
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-    h1 {
-    background-color: var(--rtc-primary-color);
-    justify-content: center;
-    padding: 5px; 
-    border: var(--rtc-secondary-color) solid 5px;
-    border-radius: 16px; 
-    font-size: 3em;
-    margin-left: 37%;
-    margin-right: 37%;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    
+h1 {
+  background-color: var(--rtc-primary-color);
+  justify-content: center;
+  padding: 5px;
+  border: var(--rtc-secondary-color) solid 5px;
+  border-radius: 16px;
+  font-size: 3em;
+  margin-left: 37%;
+  margin-right: 37%;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-    header > ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    align-content: center;
-    list-style: none;
-    background-color: var(--rtc-primary-color) ;
-    font-size: 1.2em; 
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+  align-content: center;
+  list-style: none;
+  background-color: var(--rtc-primary-color);
+  font-size: 1.2em;
 }
 
-    a {
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-    a:hover {
-        text-shadow: 0 0 .65px #333, 0 0 .65px #333;
-        font-size: 1.1em;
+a:hover {
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+  font-size: 1.1em;
 }
 
-    main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    padding-top: 50px;
-    background-color: var(--rtc-background-color);  
-    padding-bottom: 80px;   
- }
-
-    main > section > h2 {
-    padding: 10px;
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  padding-top: 50px;
+  background-color: var(--rtc-background-color);
+  background-image: url(./Assets/rocky-wall.png);
+  padding-bottom: 80px;
 }
 
-    .actualidad {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    border: 20px;
-    border: rgb(205, 168, 122) solid 2px;
-    border-radius: 16px;
-    justify-content: space-around;
- }
-
-    .piloto {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
- }
-
-    .piloto img {
-    height: 700px;
-    object-position: center;
- }
-
-    .noticias {
-    width: 320px;
- }
-
-    .actualidad img {
-    width: 320px;
-    height: 200px;
-    margin-top: 20px;
-    padding: 5px;
-    border-radius: 8px;  
-    object-fit: cover; 
- }
-
-    section > div > p {
-    width: 200px;
-    font-style: var(--rtc-secondary-color);
- }
-
-
-    footer {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding: 30px;
-    height: 180px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: var(--rtc-primary-color); 
+main > section > h2 {
+  padding: 10px;
 }
 
-    footer img {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    gap: 10px;
+.actualidad {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: rgb(205, 168, 122) solid 2px;
+  border-radius: 16px;
+  justify-content: space-around;
+  gap: 20px;
 }
 
-    footer ul {
-    display: flex;
+.piloto {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
-    footer ul li {
-    list-style: none; 
-    margin-top: 10px;
-    margin-right: 10px;    
+.piloto img {
+  height: 650px;
+  object-position: center;
 }
 
-@media screen and (max-width:640px) {
-    .piloto img {
-        display: none;
-    }
-
+.noticias {
+  width: 320px;
 }
 
-@media screen and (min-width:640px) and (max-width:1100px){
-
+.actualidad img {
+  width: 320px;
+  height: 200px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  object-fit: cover;
 }
-    
+
+section > div > p {
+  font-style: var(--rtc-secondary-color);
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 30px;
+  height: 180px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: var(--rtc-primary-color);
+}
+
+footer img {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  gap: 10px;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .piloto img {
+    display: none;
+  }
+}
 
