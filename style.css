@@ -84,6 +84,8 @@ main > section > h2 {
 
 .actualidad {
   width: 100%;
+  min-width: 450px;
+  flex-grow: 2;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -95,17 +97,20 @@ main > section > h2 {
 }
 
 .piloto {
-  width: auto;
+  width: 100%;
+  flex-basis: 300px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  flex-shrink: 5;
 }
 
 .piloto img {
   height: 650px;
   object-position: center;
+  flex-shrink: 5;
 }
 
 .noticias {
@@ -160,3 +165,14 @@ footer ul li {
   }
 }
 
+@media screen and (min-width: 640px) and (max-width: 1350px) {
+    .piloto img {
+      flex-shrink: 3;
+    }   
+  }
+
+  @media screen and (min-width: 1350px) {
+    .piloto img {
+      flex-shrink: 4;
+    }
+  }
